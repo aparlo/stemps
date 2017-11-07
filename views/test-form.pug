@@ -1,0 +1,8 @@
+html
+  <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+  body
+    form(ref='uploadForm' id='uploadForm' action='/newpost' method='post' encType="multipart/form-data")
+      input(type="file" id="myFile" name="testUpload" multiple onchage="myFunction()")
+      input(type='submit' value='Upload!')
+  span.test
+script(src="/js/test.js")

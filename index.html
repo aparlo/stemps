@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="ru-ru">
+    <head>
+        <meta charset="utf-8"
+        <title></title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div class="uk-position-relative">
+          <div class="uk-section uk-section-media uk-background-cover uk-height-viewport" style="background-image: url(img/back2.jpg)">
+            <div class="uk-padding-large uk-heading-primary uk-text-right">Изготовление<br> печатей <br>и штампов.</div>
+            <div class="uk-offcanvas-content">
+
+                   <!-- The whole page content goes here -->
+
+                   <!-- This is a button toggling the off-canvas -->
+                   <button class="uk-button uk-button-primary uk-button-large" style="margin-top:-250px;"uk-toggle="target: #my-id" type="button">Заказать</button>
+
+                   <!-- This is an anchor toggling the off-canvas -->
+                   <a href="#my-id" uk-toggle></a>
+
+                   <!-- This is the off-canvas -->
+                   <div id="my-id" uk-offcanvas>
+                       <div class="uk-offcanvas-bar">
+
+                           <button class="uk-offcanvas-close" type="button" uk-close></button>
+                           <form action="mailto:aparlo@yandex.ru" method="post">
+                               <textarea class="uk-textarea" name="body"></textarea>
+                               <button type="submit">Send</button>
+                           </form>
+                       </div>
+                   </div>
+
+               </div>
+          </div>
+          <!-- <img class="uk-responsive-height" src="img/back2.jpg"> -->
+          <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-nav" uk-navbar>
+                  <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo">Топ-Печать</a>
+                  </div>
+                  <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                      <li class="uk-active">
+                        <a href="#">Печати, штампы</a>
+                      </li>
+                      <li>
+                        <a href="#">Полирафия</a>
+                      </li>
+                  </div>
+                  <div class="uk-navbar-right">
+                    <div class="uk-navbar-toggle" uk-toggle="target: #contact">
+                      <span uk-icon="icon: receiver; ratio:1"></span>
+                      <p class="uk-text-small uk-margin-right">(473) <span class="uk-text-large">257-55-33</span></p>
+                      <span uk-icon="icon: location; ratio:1"></span>
+                      <p class="uk-text-small"> ул. Кости Стрелюка, 16а</p>
+                    </div>
+                  </div>
+                  <!-- This is the modal -->
+                  <div id="contact" uk-modal>
+                      <div class="uk-modal-dialog uk-modal-body">
+                          <h2 class="uk-modal-title">Как нас найти</h2>
+                          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abe21d73b815d1b107e82863259052480a54615847815753c8d17ebdcf4b673c9&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                          <button class="uk-button-default uk-modal-close" type="button">Закрыть</button>
+                      </div>
+                  </div>
+            </nav>
+          </div>
+          <div class="uk-container uk-container-small uk-position-relative">
+            <div class="uk-background-muted uk-padding-large uk-box-shadow-medium" style="margin-top:-70px;">
+              <p class="uk-text-lead">Специфика развития современного общества такова, что сегодня ни один документ не будет действителен без проставленных на нем оттисков печати или штампа. Наша компания многие годы специализируется на изготовлении печатей и штампов.</p>
+              <div class="uk-grid-match uk-grid-divider uk-child-width-1-3" uk-grid>
+                <p>Мы изготавливаем разные печати, штампы, печати для государственных учреждении, врачей, адвокатов и нотариусов, факсимиле и экслибрисы и даем гарантию на всю производимую нами продукцию.</p>
+                <p>У нас много постоянных клиентов, среди которых различные министерства, рекламные агентства, РЖД и т.д., которые выбрали нас за высокие профессиональные качества.</p>
+                <p>Цены на наши услуги наиболее доступные в нашем городе, так как мы заботимся о том, чтобы наши клиенты были заинтересованы в работе с нами на постоянной основе.</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-section uk-section-large uk-section-secondary">
+            <div class="uk-container uk-container-small">
+              <h1 class="uk-heading-primary">Foorer heading</h1>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
